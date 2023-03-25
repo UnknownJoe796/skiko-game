@@ -12,7 +12,6 @@ fun SkiaLayer.setRootComponent(gameComponent: GameComponent) {
     addView(GenericSkikoView(this, object : SkikoView {
         var lastTime = 0L
         override fun onRender(canvas: Canvas, width: Int, height: Int, nanoTime: Long) {
-            Controllers.step()
             if(lastTime == 0L) {
                 gameComponent.render(canvas, width, height, 0f)
                 lastTime = nanoTime

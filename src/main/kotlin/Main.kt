@@ -41,6 +41,5 @@ class StarterTest : GameComponent {
 
         canvas.clear(Color.WHITE)
         canvas.drawCircle(width / 2f, height / 2f, 25f, paint)
-
     }
 }
